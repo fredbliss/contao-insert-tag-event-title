@@ -1,0 +1,36 @@
+{
+    "name": "intelligentspark/contao-insert-tag-event-title",
+    "description": "a custom insert tag to get event title from url parameter",
+    "type": "contao-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fbliss",
+            "email": "fred.bliss@intelligentspark.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "contao/core": ">=3.3.0,<4.0.0-dev",
+        "contao-community-alliance/composer-plugin": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "IntelligentSpark\\": [
+                "system/modules/contao-insert-tag-event-title/library/"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/contao-insert-tag-event-title"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}
